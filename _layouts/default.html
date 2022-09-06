@@ -7,17 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>Prodlay {{ page.title }}</title>
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="/images/favicon/site.webmanifest">
-  <link href="/index.min.css" rel="stylesheet">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Rokkitt:wght@400;700&display=swap"
     rel="stylesheet">
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- CSS -->
+  <link href="/index.min.css" rel="stylesheet">
 </head>
 
 <body class="container px-2 mx-auto">
@@ -30,9 +32,26 @@
     <section class="container flex-grow mx-auto my-3">
       {{ content }}
     </section>
-    <footer class="p-4 my-10 text-center">
-      <small>Copyright © 2022 Prodlay.</small>
+    <footer class="grid p-4 my-10 text-center">
+      <a href="/" class="p-4 text-4xl text-red-400 rounded drop-shadow-lg rokkitt">
+        P.
+      </a>
+      <small>Copyright © 2022 Prodlay</small>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function ()
+      {
+        var replacers = document.querySelectorAll('[data-replace]');
+        for (var i = 0; i < replacers.length; i++)
+        {
+          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+          Object.keys(replaceClasses).forEach(function (key)
+          {
+            replacers[i].classList.remove(key);
+            replacers[i].classList.add(replaceClasses[key]);
+          });
+        }
+      });
+    </script>
 </body>
-
 </html>
