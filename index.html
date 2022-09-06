@@ -1,152 +1,105 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="night">
+---
+layout: default
+title: Home
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <title>Prodlay </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link href="index.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Rokkitt:wght@400;700&display=swap"
-        rel="stylesheet">
-
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
-
-<body class="">
-    <div class="flex flex-col justify-between min-h-screen mx-5">
-        <div class="container p-8 mx-auto text-5xl">
-            <div class="flex items-center justify-center gap-2">
-                <div class="px-1 py-1 tracking-wide text-red-400 rounded drop-shadow-lg rokkitt">
-                    Prodlay</div>
+<main class="flex flex-col h-[80vh] my-auto text-white ">
+    <div class="flex-grow px-10 hero">
+        <div class="flex flex-col max-w-2xl gap-5 font-light">
+            <div class="text-5xl rokkitt">
+                We craft applications
             </div>
+            <div class="text-2xl typewriter">
+                Innovative, efficient and scalable
+            </div>
+            <a href="/role/full-stack-engineer" class="my-5 btn">
+                We are hiring
+            </a>
         </div>
-        <main class="container h-full mx-auto text-white">
-            <div class="px-10 rounded hero">
-                <div class="text-center hero-content">
-                    <div class="flex flex-col max-w-2xl gap-5 font-light">
-                        <div class="text-5xl rokkitt">
-                            We craft applications
-                        </div>
-                        <div class="text-2xl typewriter">
-                            Innovative, efficient and scalable
-                        </div>
-                        <div class="btn ">
-                            We are hiring
-                        </div>
-
-                        <!-- <div class="flex items-center justify-center gap-3 text-xl ">
-                        piece of
-                        <img class="h-8 opacity-80" src='images/icons/cake.png' />
-                    </div> -->
-
-                    </div>
-                </div>
-            </div>
-        </main>
-        <div class="flex items-center justify-center gap-3 mb-10 text-xs opacity-50">
-            <div>
-                <img class="h-14 invert" src='images/icons/browser.png' />
-            </div>
-            <div>
-                <img class="h-14 invert" src='images/icons/smartphone.png' />
-            </div>
-        </div>
+    </div>
+    <div class="flex items-center justify-center gap-3 mb-10 text-xs opacity-50">
+        <img class="h-14 invert" src='images/icons/browser.png' />
+        <img class="h-14 invert" src='images/icons/smartphone.png' />
+    </div>
+</main>
 
 
-        <style>
-            .ms-slider {
-                display: inline-block;
-                height: 1.5em;
-                overflow: hidden;
-                vertical-align: middle;
-                -webkit-mask-image: linear-gradient(transparent, white, white, white, transparent);
-                mask-image: linear-gradient(transparent, white, white, white, transparent);
-                mask-type: luminance;
-                mask-mode: alpha;
-            }
-
-            .ms-slider__words {
-                display: inline-block;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                -webkit-animation-name: wordSlider;
-                animation-name: wordSlider;
-                -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-                -webkit-animation-duration: 10s;
-                animation-duration: 10s;
-            }
-
-            .ms-slider__word {
-                display: block;
-                line-height: 1.3em;
-                text-align: left;
-            }
-
-            @-webkit-keyframes wordSlider {
-
-                0%,
-                27% {
-                    transform: translateY(0%);
-                }
-
-                33%,
-                60% {
-                    transform: translateY(-25%);
-                }
-
-                66%,
-                93% {
-                    transform: translateY(-50%);
-                }
-
-                100% {
-                    transform: translateY(-75%);
-                }
-            }
-
-            @keyframes wordSlider {
-
-                0%,
-                27% {
-                    transform: translateY(0%);
-                }
-
-                33%,
-                60% {
-                    transform: translateY(-25%);
-                }
-
-                66%,
-                93% {
-                    transform: translateY(-50%);
-                }
-
-                100% {
-                    transform: translateY(-75%);
-                }
-            }
-        </style>
 
 
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script>
-            // Accepts any class name
-            var rellax = new Rellax('.rellax');
-        </script>
+<style>
+    .ms-slider {
+        display: inline-block;
+        height: 1.5em;
+        overflow: hidden;
+        vertical-align: middle;
+        -webkit-mask-image: linear-gradient(transparent, white, white, white, transparent);
+        mask-image: linear-gradient(transparent, white, white, white, transparent);
+        mask-type: luminance;
+        mask-mode: alpha;
+    }
 
-</body>
+    .ms-slider__words {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -webkit-animation-name: wordSlider;
+        animation-name: wordSlider;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+    }
 
-</html>
+    .ms-slider__word {
+        display: block;
+        line-height: 1.3em;
+        text-align: left;
+    }
+
+    @-webkit-keyframes wordSlider {
+
+        0%,
+        27% {
+            transform: translateY(0%);
+        }
+
+        33%,
+        60% {
+            transform: translateY(-25%);
+        }
+
+        66%,
+        93% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(-75%);
+        }
+    }
+
+    @keyframes wordSlider {
+
+        0%,
+        27% {
+            transform: translateY(0%);
+        }
+
+        33%,
+        60% {
+            transform: translateY(-25%);
+        }
+
+        66%,
+        93% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(-75%);
+        }
+    }
+</style>

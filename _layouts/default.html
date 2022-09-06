@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>Prodlay {{ page.title }}</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <link href="/index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Rokkitt:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="container mx-auto">
+  <div class="flex flex-col min-h-screen">
+      <nav class="flex items-center justify-center gap-2 p-8 text-4xl">
+        <a href="/" class="px-1 py-1 text-red-400 rounded drop-shadow-lg rokkitt">
+          Prodlay
+        </a>
+      </nav>
+    <section class="container flex-grow mx-auto my-3">
+      {{ content }}
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
