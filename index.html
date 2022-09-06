@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-<main class="flex flex-col h-[80vh] max-w-3xl mx-auto mockup-window border bg-base-300 my-auto text-white ">
+<main class="flex flex-col h-[80vh] mx-auto max-w-sm md:mockup-window md:max-w-4xl  border mockup-phone bg-base-300 my-auto text-white ">
+    <div class="camera md:hidden"></div> 
     <div class="w-full max-w-sm p-4 mx-auto rounded-md shadow opacity-20">
         <div class="flex space-x-4">
             <div><div class="w-10 h-full rounded bg-slate-200"></div></div>
@@ -24,7 +25,7 @@ title: Home
             <div class="text-5xl rokkitt">
                 We craft applications
             </div>
-            <div class="text-xl typewriter">
+            <div class="overflow-x-hidden md:text-xl typewriter ">
                 Innovative, cost-efficient and scalable...
             </div>
 
@@ -40,8 +41,6 @@ title: Home
         <img class="h-14 invert" src='images/icons/smartphone.png' />
     </div>
 </main>
-
-
 
 
 <style>
