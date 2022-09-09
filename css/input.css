@@ -15,6 +15,21 @@
 
 }
 
+@layer utilities {
+  .show-mobile{
+    @apply mockup-phone pt-4 max-w-sm glass flex flex-col
+  }
+  .show-mobile #text-1{
+    @apply text-sm
+  }
+  .show-mobile .camera{
+    @apply visible
+  }
+  .show-window{
+    @apply  mockup-window border w-full max-w-4xl bg-black flex flex-col
+  }
+}
+
 body, html {
   height: 100%;
 }

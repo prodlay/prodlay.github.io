@@ -3,27 +3,29 @@ layout: jobs
 title: About
 ---
 
-# Full Stack Engineer
+## Full Stack Engineer
 
- Ruby, Rails, nodejs
 
-### Key responsibilities include
+### Qualifications
 
-    • Develop Web Services Using Ruby On Rails
-    • Participate in customer demand analysis
-    • Participate in discussions on customer product feedback
-    • Market research and prototyping to develop their own products
-    • Quality control
-
+    . Overall 5+ years of experience in software development    
+    . Experience in building API-driven applications or endpoints
+    . Strong design and architecture skills
+    • Experience with software engineering best practices (e.g. unit testing, code reviews, design documentation)
+    . Experience with frontend framworks like Reactjs/Vuejs
+    . Experience with databases like Mysql/postgres/Mongodb
+    . A solid understanding of HTML, CSS, and JavaScript/Typescript
 
 ### Qualifications require
 
-    • +2 years of work experience
+    • 4+ years of work experience
     • Strong skills in Ruby on Rails
+    . Good understanding of component based architecture.
+
+    
 
 ### Preferences
 
-    • Good know-how on time management
     • Product development experience (either of individual/team projects)
     • Understanding of Agile Development Process
     • Understanding of Lean Startup

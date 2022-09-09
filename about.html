@@ -1,0 +1,100 @@
+---
+layout: default
+title: About us
+---
+
+<main class="flex justify-center mx-auto ">
+    
+</main>
+<script>
+    document.querySelector('.mobile-layout').addEventListener('click', () =>
+    {
+        console.log('test')
+        document.getElementById("layout").classList.toggle('show-mobile');
+        document.getElementById("layout").classList.toggle('show-window');
+    });
+    document.querySelector('.browser-layout').addEventListener('click', () =>
+    {
+        document.getElementById("#layout").classList.toggle('mockup-phone');
+        document.getElementById("#layout").classList.toggle('mockup-window');
+    });
+</script>
+
+
+<style>
+    .ms-slider {
+        display: inline-block;
+        height: 1.5em;
+        overflow: hidden;
+        vertical-align: middle;
+        -webkit-mask-image: linear-gradient(transparent, white, white, white, transparent);
+        mask-image: linear-gradient(transparent, white, white, white, transparent);
+        mask-type: luminance;
+        mask-mode: alpha;
+    }
+
+    .ms-slider__words {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -webkit-animation-name: wordSlider;
+        animation-name: wordSlider;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+    }
+
+    .ms-slider__word {
+        display: block;
+        line-height: 1.3em;
+        text-align: left;
+    }
+
+    @-webkit-keyframes wordSlider {
+
+        0%,
+        27% {
+            transform: translateY(0%);
+        }
+
+        33%,
+        60% {
+            transform: translateY(-25%);
+        }
+
+        66%,
+        93% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(-75%);
+        }
+    }
+
+    @keyframes wordSlider {
+
+        0%,
+        27% {
+            transform: translateY(0%);
+        }
+
+        33%,
+        60% {
+            transform: translateY(-25%);
+        }
+
+        66%,
+        93% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(-75%);
+        }
+    }
+</style>
