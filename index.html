@@ -3,16 +3,16 @@ layout: default
 title: Home
 ---
 
-<main class="flex justify-center mx-auto ">
-    <div id="layout" class="min-h-[80vh] text-white transition-all  show-window">
+<main class="flex justify-center mx-auto " data-aos="fade-up"  data-aos-easing="ease-in-out" data-aos-duration="1000">
+    <div id="layout"  class="text-white transition-all shadow-lg show-window">
         <div class="invisible camera"></div>
 
-        <div class="flex-grow px-10 mt-4 hero">
-            <div class="flex flex-col max-w-2xl gap-5 font-light text-center">
-                <div class="text-5xl transition-all rokkitt ">
+        <div id="layout-display" class="display">
+            <div id="layout-body" class="grid gap-2 mx-auto text-center artboard artboard-demo phone-1">
+                <div class="text-5xl transition-all layout-title rokkitt ">
                     We craft applications
                 </div>
-                <div id="text-1" class="overflow-x-hidden md:text-xl typewriter ">
+                <div id="text-1" class="my-5 overflow-x-hidden md:text-xl typewriter">
                     Innovative, cost-efficient and scalable.
                 </div>
                 <div class="w-full max-w-sm p-4 mx-auto rounded-md shadow opacity-20">
@@ -33,29 +33,31 @@ title: Home
                     </div>
                 </div>
 
-                <div class="font-bold text-gray-500">We are working on a product. Shh...</div>
-                <a href="/careers" class="my-5 ghost text-error">
-                    We are hiring !
+               <div>
+                <a href="/careers" class="my-5 font-thin btn btn-ghost text-error">
+                    Join us. we are hiring!
                 </a>
+               </div>
+               
+
+                <div class="flex items-center justify-center gap-3 mb-10 text-xs opacity-50">
+                    <a class="p-1 border-red-400 rounded cursor-pointer browser-layout hover:border">
+                    </a>
+                    <a class="p-1 transition-all border-red-400 rounded cursor-pointer mobile-layout w-14">
+                        <img id="layout-icon-1" class="hidden invert" src='images/icons/browser.png' />
+                        <img id="layout-icon-2" class="invert" src='images/icons/smartphone.png'/>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="flex items-center justify-center gap-3 mb-10 text-xs opacity-50">
-            <a class="p-1 border-red-400 rounded cursor-pointer browser-layout hover:border">
-                
-            </a>
-            <a class="p-1 transition-all border-red-400 rounded cursor-pointer mobile-layout w-14">
-                <img id="layout-icon-1" class="hidden invert" src='images/icons/browser.png' />
-                <img id="layout-icon-2" class="invert" src='images/icons/smartphone.png'/>
-            </a>
-        </div>
+       
     </div>
 </main>
 
 <script>
     document.querySelector('.mobile-layout').addEventListener('click', () =>
     {
-        console.log('test')
         document.getElementById("layout").classList.toggle('show-mobile');
         document.getElementById("layout").classList.toggle('show-window');
         document.getElementById("layout-icon-1").classList.toggle('hidden');

@@ -17,16 +17,28 @@
 
 @layer utilities {
   .show-mobile{
-    @apply mockup-phone pt-4 max-w-sm glass flex flex-col
+    @apply mockup-phone
   }
   .show-mobile #text-1{
-    @apply text-sm
+    @apply text-sm mb-5
+  }
+  .show-mobile .layout-title{
+    @apply text-3xl mb-5
   }
   .show-mobile .camera{
     @apply visible
   }
+
+  .show-mobile #layout-body{
+    @apply phone-1 artboard artboard-demo
+  }
+ 
+
   .show-window{
-    @apply  mockup-window border w-full max-w-4xl bg-black flex flex-col
+    @apply  mockup-window border w-full max-w-6xl flex flex-col 
+  }
+  .show-window #layout-body{
+    @apply w-auto
   }
 }
 
