@@ -32,10 +32,9 @@
   .show-mobile #layout-body{
     @apply phone-1 artboard artboard-demo
   }
- 
 
   .show-window{
-    @apply  mockup-window border w-full max-w-6xl flex flex-col 
+    @apply  mockup-window border w-full max-w-6xl flex flex-col p-4
   }
   .show-window #layout-body{
     @apply w-auto
