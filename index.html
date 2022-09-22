@@ -3,8 +3,9 @@ layout: default
 title: Home
 ---
 
-<main class="flex justify-center max-w-5xl mx-auto " data-aos="fade-up"  data-aos-easing="ease-in-out" data-aos-duration="1000">
-    <div id="layout"  class="text-white transition-all shadow-lg show-window">
+<main class="flex justify-center max-w-5xl mx-auto " data-aos="fade-up" data-aos-easing="ease-in-out"
+    data-aos-duration="1000">
+    <div id="layout" class="text-white transition-all shadow-lg show-mobile">
         <div class="invisible camera"></div>
 
         <div id="layout-display" class="display">
@@ -33,37 +34,64 @@ title: Home
                     </div>
                 </div>
 
-               <div>
-                <a href="/careers" class="my-5 font-thin btn btn-ghost text-error">
-                    Join us. we are hiring!
-                </a>
-               </div>
-               
+                <div>
+                    <a href="/careers" class="my-5 font-thin btn btn-ghost text-error">
+                        Join us. we are hiring!
+                    </a>
+                </div>
 
-                <div class="flex items-center justify-center gap-3 mb-10 text-xs opacity-50">
+
+                <div class="flex flex-col items-center justify-center gap-3 p-4 text-xs opacity-50">
                     <a class="p-1 border-red-400 rounded cursor-pointer browser-layout hover:border">
                     </a>
                     <a class="p-1 transition-all border-red-400 rounded cursor-pointer mobile-layout w-14">
                         <img id="layout-icon-1" class="hidden invert" src='images/icons/browser.png' />
-                        <img id="layout-icon-2" class="invert" src='images/icons/smartphone.png'/>
+                        <img id="layout-icon-2" class="invert" src='images/icons/smartphone.png' />
                     </a>
+                    <progress id="bar" class="w-14 h-[2px] opacity-80 progress progress-error" value="0" max="100"></progress>
                 </div>
+                
             </div>
         </div>
 
-       
+
     </div>
 </main>
 
 <script>
+    var barValue = 0
+    var progressBar = document.getElementById("bar");
     document.querySelector('.mobile-layout').addEventListener('click', () =>
     {
+        chageLayout()
+    });
+    function chageLayout()
+    {
+        clearInterval(layoutTimer)
+        barValue = 0
+        
         document.getElementById("layout").classList.toggle('show-mobile');
         document.getElementById("layout").classList.toggle('show-window');
         document.getElementById("layout-icon-1").classList.toggle('hidden');
         document.getElementById("layout-icon-2").classList.toggle('hidden');
-    });
-   
+
+        var layoutTimer = setTimeout(chageLayout, 15000);
+
+    }
+
+    var intervalID = setInterval(function ()
+    {
+        if (barValue <= 100)
+        {
+            progressBar.setAttribute("value", barValue++);
+        }else{
+            clearInterval(intervalID)
+        }
+    }, 150);
+
+
+    chageLayout()
+
 </script>
 
 
